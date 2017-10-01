@@ -1,0 +1,15 @@
+[submodule "studio"]
+	path = studio
+	url = https://notabug.org/caryoscelus/rainynite-studio.git
+[submodule "core"]
+	path = core
+	url = https://notabug.org/caryoscelus/rainynite-core.git
+[submodule "morph"]
+	path = morph
+	url = https://notabug.org/caryoscelus/rainy-morph.git
+[submodule "lib2geom"]
+	path = lib2geom
+	url = https://github.com/caryoscelus/lib2geom.git
+[submodule "fmt"]
+	path = fmt
+	url = https://github.com/fmtlib/fmt.git
