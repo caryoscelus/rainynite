@@ -20,7 +20,7 @@ External dependencies
 
 - [qt](https://www.qt.io/)
 - [Inkscape](https://inkscape.org/) - used to render SVG output of RainyNite "renderer"; can be replaced with other command line SVG renderer
-- [boost][http://boost.org]
+- [boost](http://boost.org)
 
 Build environment
 -----------------
