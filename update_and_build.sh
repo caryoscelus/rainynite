@@ -14,7 +14,7 @@ echo Build fmt...
 pushd fmt
 mkdir -p build
 cd build
-[[ ! -f CMakeCache.txt ]] && cmake -GNinja ${FMT_FLAGS} "$@" .. || cmake "$@" .
+[[ ! -f CMakeCache.txt ]] && cmake -GNinja ${FMT_FLAGS} "$@" .. || cmake "$@" . || exit 1
 ninja ${BUILD_JOBS} || exit 1
 ninja test
 sudo ninja -j1 install
@@ -24,7 +24,7 @@ echo Building lib2geom...
 pushd lib2geom
 mkdir -p build
 cd build
-[[ ! -f CMakeCache.txt ]] && cmake -GNinja ${LIB2GEOM_FLAGS} "$@" .. || cmake "$@" .
+[[ ! -f CMakeCache.txt ]] && cmake -GNinja ${LIB2GEOM_FLAGS} "$@" .. || cmake "$@" . || exit 1
 ninja ${BUILD_JOBS} || exit 1
 ninja test
 sudo ninja -j1 install
@@ -34,7 +34,7 @@ echo Building rainy-morph...
 pushd morph
 mkdir -p build
 cd build
-[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" .
+[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" . || exit 1
 ninja ${BUILD_JOBS} || exit 1
 ninja test
 sudo ninja -j1 install
@@ -44,7 +44,7 @@ echo Building core...
 pushd core
 mkdir -p build
 cd build
-[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" .
+[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" . || exit 1
 ninja ${BUILD_JOBS} || exit 1
 ninja test
 sudo ninja -j1 install
@@ -54,7 +54,7 @@ echo Building studio...
 pushd studio
 mkdir -p build
 cd build
-[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" .
+[[ ! -f CMakeCache.txt ]] && cmake -GNinja "$@" .. || cmake "$@" . || exit 1
 ninja ${BUILD_JOBS} || exit 1
 # ninja test
 # sudo ninja -j1 install
