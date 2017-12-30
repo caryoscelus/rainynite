@@ -1,8 +1,7 @@
 RainyNite
 =========
 
-RainyNite is a free/libre software vector animation tool, currently in early
-development.
+RainyNite is a free/libre software 2D vector animation tool in active development.
 
 This is a "meta-repository" containing all needed dependencies and parts as
 submodules. Its only purpose is to simplify building RainyNite for users.
@@ -21,6 +20,10 @@ External dependencies
 - [qt](https://www.qt.io/)
 - [Inkscape](https://inkscape.org/) - used to render SVG output of RainyNite "renderer"; can be replaced with other command line SVG renderer
 - [boost](http://boost.org)
+- [ffmpeg](https://www.ffmpeg.org/) - optional, used for waveform & webm encoding
+- [mpv](https://mpv.io/) - optional, used for "external player" action; can be replaced by other player supporting frame list playing
+
+Other dependencies are bundled in this repository as submodules.
 
 Build environment
 -----------------
