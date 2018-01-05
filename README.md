@@ -17,9 +17,10 @@ build RainyNite.
 External dependencies
 ---------------------
 
-- [qt](https://www.qt.io/)
-- [Inkscape](https://inkscape.org/) - used to render SVG output of RainyNite "renderer"; can be replaced with other command line SVG renderer
 - [boost](http://boost.org)
+- [qt](https://www.qt.io/)
+- [KDE Frameworks][https://kde.org/]
+- [Inkscape](https://inkscape.org/) - used to render SVG output of RainyNite "renderer"; can be replaced with other command line SVG renderer
 - [ffmpeg](https://www.ffmpeg.org/) - optional, used for waveform & webm encoding
 - [mpv](https://mpv.io/) - optional, used for "external player" action; can be replaced by other player supporting frame list playing
 
